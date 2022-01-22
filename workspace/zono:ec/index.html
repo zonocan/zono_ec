@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>zono</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<header class="header_all">
+  <div class="logo_part">
+    <img src="img/zono_logo.png" id="logo">
+    <ul class="logo_part_nav">
+      <li>UNISON</li>
+      <li>MENS</li>
+      <li>WOMENS</li>
+    </ul>
+  </div>
+    <div class="header_nav_ui">
+        <a href="#" class="header_btn active">
+          <img src="img/keep_ui.png" class="ui_buttons">
+        </a>
+          <a href="#" class="header_btn active">
+            <img src="img/like_ui_header.png" class="ui_buttons">
+          </a>
+            <a href="#" class="header_btn active">
+              <img src="img/info_ui.png" class="ui_buttons">
+            </a>
+              <a href="#" class="header_btn active">
+                <img src="img/new_ui.png" class="ui_buttons">
+              </a>
+                <a href="#" class="header_btn active">
+                  <img src="img/search_ui.png" class="ui_buttons">
+                </a>
+                  <a href="#" class="header_btn active">
+                    <img src="img/header_cart_ui.png" class="ui_buttons">
+                  </a>
+                    <a href="#" class="header_btn active">
+                      <img src="img/hamberger_menyu.png" class="ui_buttons">
+                    </a>
+    </div>
+</header>
+ <body>
+   <div class="all_main">
+     <div class="side_naves">
+       <form method="post">
+         <select class="side_black side_ALL_nav" name="select_side_var">
+           <option value="">ALL</option>
+           <option value="mens">MENS</option>
+           <option value="womens">WOMENS</option>
+           <option value="unison">UNISON</option>
+         </select>
+           <select class="side_nav" name="select_side_var" id="side_black_TOPIC">
+             <option value="">TOPICS</option>
+             <option value="mens">MENS</option>
+             <option value="womens">WOMENS</option>
+             <option value="unison">UNISON</option>
+           </select>
+             <select class="side_nav" name="select_side_var" id="side_black_CATEGORY">
+               <option value="">CATEGORY</option>
+               <option value="mens">MENS</option>
+               <option value="womens">WOMENS</option>
+               <option value="unison">UNISON</option>
+             </select>
+               <select class="side_nav" name="select_side_var" id="side_black_PRICE">
+                 <option value="">PRICE</option>
+                 <option value="mens">MENS</option>
+                 <option value="womens">WOMENS</option>
+                 <option value="unison">UNISON</option>
+               </select>
+                 <select class="side_nav" name="select_side_var" id="side_black_COLOR">
+                   <option value="">COLOR</option>
+                   <option value="mens">MENS</option>
+                   <option value="womens">WOMENS</option>
+                   <option value="unison">UNISON</option>
+                 </select>
+        </form>
+     </div>
+      <!--
+        <span class=""></span>
+        <div class="select_box select_box-side_black_ALL">
+          <span data-option="option_1" class="select_box_options select_box_options-side_black_ALL">
+            Option1
+          </span>
+            <span data-option="option_2" class="select_box_options select_box_options-side_black_ALL">
+              Option2
+            </span>
+              <span data-option="option_3" class="select_box_options select_box_options-side_black_ALL">
+                Option3
+              </span>
+        </div>
+      -->
+
+      <!--
+        .not-active.selected = hide
+        .active.selected = show
+      -->
+       <div class="items_main">
+         <div class="item_naves">
+             <p class="item_figure">3</p>
+             <p class="items">items</p>
+             <p class="sex">MENS</p>
+             <p class="X">/</p>
+             <p class="item_junle">jucket</p>
+         </div>
+            <div class="item_categoris">
+              <div class="item_category_cover">
+                <h1 class="item_category_topic">全ての商品<h1>
+              </div>
+                <div class="item_category_cover">
+                  <h1 class="item_category_topic">通常価格<h1>
+                </div>
+                  <div class="item_category_cover">
+                    <h1 class="item_category_topic">セール価格<h1>
+                  </div>
+            </div>
+              <div class="items_line_up">
+                <div class="item_line_up">
+                  <div class="item_cover">
+                    <h2 class="item_name">Denimu Talard</h2>
+                  </div>
+                    <div class="item_photo">
+                      <img src="img/denim-j.JPG">
+                    </div>
+                      <div class="item_cover">
+                        <div class="item_price_cover">
+                          <p class="yen">¥</p>
+                          <h2 class="item_price">20,000</h2>
+                        </div>
+                          <div class="item_price_ui_nav">
+                              <a href="#" class="cart_btn">
+                                <img src="img/cart_ui.png">
+                              </a>
+                                <a href="#" class="like_btn like_active" id="like_btn_1">
+                                  <img id="like_btns_img_1" >
+                                </a>
+                                  <script>
+
+                                  //いいねボタンの実装
+
+                                    $(function(){
+                                      //alert('いいねしますか？');
+                                      const like_imgs = ['like.gif','like_pushed.png'];
+                                      let like_btn_index = 0;
+
+                                    //初期画像の表示
+                                    $('#like_btns_img_1').attr('src','img/' + like_imgs[like_btn_index]);
+
+                                      //いいねボタンの画像の切り替え
+                                    $('#like_btn_1').on('click',function(){
+
+                                      //最後の画像判定
+                                      if(like_btn_index == like_imgs.length -1){
+                                        like_btn_index = 0;
+                                      }else{
+                                        like_btn_index++;
+                                      }
+
+                                      //画像の切り替え
+                                      $('#like_btns_img_1').attr('src','img/' + like_imgs[like_btn_index]);
+
+
+                                    });
+                                  });
+
+                                  </script>
+                          </div>
+                      </div>
+                </div>
+                  <div class="item_line_up">
+                    <div class="item_cover">
+                      <h2 class="item_name">ZONO Jucket</h2>
+                    </div>
+                      <div class="item_photo">
+                        <img src="img/zono-j.JPG">
+                      </div>
+                        <div class="item_cover">
+                          <div class="item_price_cover">
+                            <p class="yen">¥</p>
+                            <h2 class="item_price">20,000</h2>
+                          </div>
+                            <div class="item_price_ui_nav">
+                                <img src="img/cart_ui.png">
+                                  <a href="#" class="like_btn like_active" id="like_btn_2">
+                                    <img id="like_btns_img_2">
+                                  </a>
+                                    <script>
+
+                                    //いいねボタンの実装
+
+                                      $(function(){
+                                        //alert('いいねしますか？');
+                                        const like_imgs = ['like.gif','like_pushed.png'];
+                                        let like_btn_index = 0;
+
+                                      //初期画像の表示
+                                      $('#like_btns_img_2').attr('src','img/' + like_imgs[like_btn_index]);
+
+                                        //いいねボタンの画像の切り替え
+                                      $('#like_btn_2').on('click',function(){
+
+                                        //最後の画像判定
+                                        if(like_btn_index == like_imgs.length -1){
+                                          like_btn_index = 0;
+                                        }else{
+                                          like_btn_index++;
+                                        }
+
+                                        //画像の切り替え
+                                        $('#like_btns_img_2').attr('src','img/' + like_imgs[like_btn_index]);
+
+
+                                      });
+                                    });
+
+                                    </script>
+                            </div>
+                        </div>
+                  </div>
+                    <div class="item_line_up">
+                      <div class="item_cover">
+                        <h2 class="item_name">Denimu Talard</h2>
+                      </div>
+                        <div class="item_photo">
+                          <img src="img/denim-j.JPG">
+                        </div>
+                          <div class="item_cover">
+                            <div class="item_price_cover">
+                              <p class="yen">¥</p>
+                              <h2 class="item_price">20,000</h2>
+                            </div>
+                              <div class="item_price_ui_nav">
+                                  <img src="img/cart_ui.png">
+                                    <a href="#" class="like_btn like_active" id="like_btn_3">
+                                      <img id="like_btns_img_3">
+                                    </a>
+                                      <script>
+
+                                      //いいねボタンの実装
+
+                                        $(function(){
+                                          //alert('いいねしますか？');
+                                          const like_imgs = ['like.gif','like_pushed.png'];
+                                          let like_btn_index = 0;
+
+                                        //初期画像の表示
+                                        $('#like_btns_img_3').attr('src','img/' + like_imgs[like_btn_index]);
+
+                                          //いいねボタンの画像の切り替え
+                                        $('#like_btn_3').on('click',function(){
+
+                                          //最後の画像判定
+                                          if(like_btn_index == like_imgs.length -1){
+                                            like_btn_index = 0;
+                                          }else{
+                                            like_btn_index++;
+                                          }
+
+                                          //画像の切り替え
+                                          $('#like_btns_img_3').attr('src','img/' + like_imgs[like_btn_index]);
+
+
+                                        });
+                                      });
+                                      
+                                      </script>
+                              </div>
+                          </div>
+                    </div>
+              </div>
+       </div>
+    </div>
+ </body>
+</html> 
