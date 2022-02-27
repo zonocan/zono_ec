@@ -1,0 +1,50 @@
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  padding: 5px 0 5px 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer_inner{
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  clip-path: polygon(0% 100%, 5.5% 0%, 94.5% 0%, 100% 100%);
+  padding: 5px;
+}
+
+
+.footer_ui_btn img{
+  height: 30px;
+  width: 100%;
+}
+
+.footer_ui_btn img:hover{
+  opacity: 0.5;
+  border-bottom: 5px solid #90000e;
+  cursor: pointer;
+}
+
+.active_profeal_img:hover{
+  opacity: 0.5;
+  border-bottom: 5px solid #90000e;
+
+}
+
+#profeal_btn img{
+  border-radius: 50%;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .footer_ui_btn img{
+      height: 25px;
+    }
+
+}

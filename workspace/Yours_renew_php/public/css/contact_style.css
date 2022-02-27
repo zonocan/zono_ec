@@ -1,0 +1,111 @@
+
+.contact_form {
+    border-radius: 2vw;
+    border: solid;
+    margin: 4% 5%;
+    padding: 0 1%;
+}
+.contact_form h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.contact_form h2 {
+    font-size: 16.5px;
+    font-weight: 100;
+    background-color: lightgray;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 6px 3px;
+    margin-top: 18px;
+}
+.blank{
+  height:61px;
+}
+.line_form{
+  background: black;
+  width:100%;
+  height: 1px;
+}
+.contact_form p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: black;
+}
+.contact_form label{
+
+}
+.contact_text {
+    font-size: 16px;
+    line-height: 2.2;
+    width: 99%;
+    border-radius: 7px;
+    border:1px solid;
+}
+.contact_textarea {
+    width: 99%;
+    border-radius: 1vw;
+    margin: 15px 0;
+}
+.button1 {
+    width: 99%;
+    height: 45px;
+    color: white;
+    border-radius: 1vw;
+    background: deeppink;
+    border: none;
+    font-size: 19px;
+    letter-spacing: 17px;
+    margin-bottom: 23px;
+}
+.confirm h3 {
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 1px solid;
+    margin-top: 15px;
+}
+h4{
+  font-size: 13px;
+  font-weight: 300;
+  color: red;
+}
+.confirm_p {
+    margin: 17px 0px;
+    padding-top: 12px;
+}
+.confirm p {
+    font-size: 20px;
+    padding-left: 7px;
+}
+.button2 {
+    width: 99%;
+    height: 45px;
+    color: white;
+    border-radius: 1vw;
+    background: deeppink;
+    border: none;
+    font-size: 19px;
+    letter-spacing: 17px;
+    margin-bottom: 23px;
+}
+.button3 {
+    width: 99%;
+    height: 45px;
+    color: green;
+    border: solid green;
+    border-radius: 1vw;
+    background: white;
+    font-size: 19px;
+    letter-spacing: 17px;
+    margin-bottom: 23px;
+}
+.buttons a{
+  text-decoration: none;
+}
+.buttons{
+  display:flex;
+  width:100%;
+  margin-top:7px;
+}
+
+/*ここからコンタクトフォーム

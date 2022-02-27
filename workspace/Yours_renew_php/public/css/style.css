@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+
+/* ヘッダー部分のコーディング */
+
+
+/* 共通項目 */
+
+section{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+section p{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 投稿 */
+
+.post_contents{
+  width: 100%;
+  margin: 150px 0 150px 0;
+}
+
+.post_cover{
+  width: 55%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+
+/* 投稿車のプロフィール　*/
+
+.post_user_profeal{
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+
+.post_profeal_img{
+  width: 10%;
+  margin-left: 5%;
+}
+
+.post_profeal_img img{
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+
+.post_profeal_img img:hover{
+  opacity: 0.5;
+}
+
+.post_user_name{
+  width: 80%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.tag{
+  margin: 2px 3% 0 0;
+}
+
+#humberger_menue img{
+  width: 50%;
+  margin: 10px 5% 0 0;
+}
+
+#humberger_menue img:hover{
+  opacity: 0.5;
+  border-bottom: 5px solid #90000e;
+  cursor: pointer;
+}
+
+/* 商品名 */
+.post_item_name{
+  padding: 5px;
+}
+
+.post_item_name p{
+  margin-top: 3px;
+}
+
+.tag_i{
+  margin: 0 3% 0 15%;
+}
+
+/* 投稿写真 */
+
+#post_item_image img{
+  width: 100%;
+  height: 600px;
+}
+
+#post_item_image img:hover{
+  opacity: 0.5;
+}
+
+/* 金額 */
+.post_item_price{
+  width: 20%;
+  display: flex;
+  margin: 0 10% 0 7%;
+  padding: 5px;
+}
+
+.item_price{
+  width: 90%;
+  margin: 5px 0 0 5%;
+}
+
+.tag_p{
+  margin: 5px 0 0 0;
+}
+
+/* 投稿部分のui */
+
+.post_ui_btns{
+  width: 60%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 13px;
+}
+
+.post_ui_btn{
+  width: 20%;
+  align-items: center;
+}
+
+.post_ui_btn img{
+  width: 40%;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.figire{
+  width: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+#like_figire{
+  display: none;
+}
+
+#like_figire.active{}
+
+#purchase_figire{
+  display: none;
+}
+
+#purchase_figire.active{}
+
+.post_ui_btn img:hover{
+  opacity: 0.5;
+  border-bottom: 5px solid #90000e;
+  cursor: pointer;
+}
+
+/* 投稿内容 */
+
+.post_detail_cover{
+  width: 100%;
+  background-color: #f1f1f1;
+  display: none;
+}
+
+#display_btn{
+  width: 30%;
+  height: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #90000e;
+  border: none;
+}
+
+#display_btn:hover{
+  opacity: 0.5;
+}
+
+#display_btn_inner{
+  width: 100%;
+}
+
+
+
+/* レスポンシブ対応 */
+
+@media (max-width: 600px) {
+
+
+
+  /* 共通項目*/
+  section{
+    height: 35px;
+  }
+
+
+  .post_cover{
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .post_profeal_img{
+    margin-right: 10%;
+  }
+
+  .post_profeal_img img{
+    height: 25px;
+  }
+
+  #humberger_menue img{
+    width: 40%;
+    margin: 6px 5% 0 0;
+  }
+
+  #display_btn{
+    font-size: 10px;
+    margin-left: 2%;
+  }
+
+  .tag_i{
+    margin-left: 25%;
+  }
+
+  .post_user_name {
+    width: 80%;
+    display: flex;
+    margin-top: 2px;
+  }
+
+  .post_user_name p{
+    font-size: 15px
+  }
+
+  .post_item_name p{
+    font-size: 15px
+  }
+
+  #post_item_image img{
+    height: 300px;
+  }
+
+  .post_item_price{
+    width: 20%;
+    padding: 2px
+  }
+
+  .post_item_price p{
+    font-size: 15px
+  }
+
+  .post_ui_btns{
+    padding: 8px;
+  }
+
+  .post_ui_btn img{
+    height: 18px;
+    width: 55%;
+  }
+
+  .figire{
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .footer_ui_btn img{
+    height: 25px;
+  }
+
+
+}

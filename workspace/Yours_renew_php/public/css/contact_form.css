@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* reset */
+
+
+.contact_form{
+    background-color: lightgray;
+    margin-top: 50px;
+    height: 45vw;
+}
+
+.contact_form h2 {
+    font-size: 16.5px;
+    font-weight: 100;
+    border-top: 1px solid #333;
+		font-weight: bold;
+    border-bottom: 1px solid #333;
+    padding: 6px 3px;
+    text-align: center;
+}
+
+.contact_form label{
+  display: flex;
+}
+.text{
+  width: 100%;
+  display: flex;
+  margin-bottom: 1vw;
+}
+
+.text label{
+  width: 20%;
+}
+.text input{
+  width: 50%;
+
+}
+
+.body{
+  margin-top: 3vw;
+}
+.body input{
+  width: 98%;
+  height: 15vw;
+}
+
+form{
+  margin-top: 40px;
+}
+
+.b_t{
+  margin-top: 1.5vw;
+}

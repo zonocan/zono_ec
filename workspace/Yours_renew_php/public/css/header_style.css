@@ -1,0 +1,69 @@
+/* ヘッダー部分のコーディング */
+header{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.logo_cover{
+  width: 35%;
+  height: 40px;
+  background-color: white;
+  clip-path: polygon(-2000% 100%, 17.5% 0%, 82.5% 0%, 100% 100%);
+  padding: 5px;
+}
+
+.logo_cover img{
+  width: 30%;
+  height: 30px;
+  margin-left: 25%;
+}
+
+/* ui部分 */
+.header_ui_btns{
+  width: 63%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_ui_btn{
+  width: 10%;
+  margin: 10px 5% 0 0;
+}
+
+.header_ui_btn img{
+  height: 25px;
+  width: 35%;
+}
+
+.header_ui_btn img:hover{
+  opacity: 0.5;
+  border-bottom: 5px solid #90000e;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+  .logo_cover{
+    clip-path: polygon(-2000% 100%, 17.5% 0%, 100% 0%, 70% 100%);
+  }
+
+  .logo_cover img{
+    width: 40%;
+    height: 25px;
+    margin-top: 5px;
+  }
+
+  .header_ui_btn img{
+    width: 60%;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  
+
+}
